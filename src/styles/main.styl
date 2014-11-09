@@ -1,0 +1,58 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-okaidia.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+body
+	color: #fff
+	background: #00A8E5
+
+h1, h2, h3, p, li
+	color: #fff
+	text-shadow: 1px 1px 0px black
+	
+h1, h2, h3, ul, li
+	text-align: left
+	width: 100%
+
+h1
+	font-size: 3.2rem
+	line-height: 1
+h2
+	font-size: 2rem
+a
+	color: yellow
+
+.bespoke-slide
+	background: transparent
+	
+.party
+	color: red
+	animation-duration: 1s
+	animation-name: party
+	animation-iteration-count: infinite
+	text-shadow: 1px 1px 0px black
+	display: inline-block
+
+@keyframes party
+	from
+		color: red
+		transform: translateX(5px)
+	50%
+		color: cyan
+		transform: translateX(-5px)
+	to
+		color: green
+		transform: translateX(15px)
+
+img
+	max-width: 100%
+	height: auto
+
+#tail
+	position: absolute
+	bottom: 0
